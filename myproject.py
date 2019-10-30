@@ -8,7 +8,7 @@ def pretty_print(name, to_print):
     print(f'{to_print}\n\n')
 
 data = load_wine()
-print(data)
+# print(data)
 
 wine = pd.DataFrame(data=data['data'],
                     columns= data['feature_names'])
