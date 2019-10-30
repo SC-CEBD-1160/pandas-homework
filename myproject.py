@@ -20,15 +20,15 @@ pretty_print("Show all column names for a dataframe", wine.columns)
 pretty_print("Getting the shape of a dataframe", wine.shape)
 pretty_print("Summarized info on dataframe", wine.info())
 pretty_print("Quick stats on all numeric columns for dataframe", wine.describe())
-
 pretty_print("Selecting only the alcalinity_of_ash column", wine['alcalinity_of_ash'])
 
 # compute and print correlations on the dataset
 pretty_print("print correlations on the dataframe", wine.corr())
 
-# Plotting line chart
+# creating dir
 os.makedirs('plots', exist_ok=True)
 
+# Plotting line chart
 plt.plot(wine['alcohol'], color='blue')
 plt.title('Alcohol by Index')
 plt.xlabel('Index')
